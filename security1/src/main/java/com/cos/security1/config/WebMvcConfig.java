@@ -4,7 +4,7 @@ import org.springframework.boot.web.servlet.view.MustacheViewResolver;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-//ade9978f-f00f-4480-a3c8-f8f6b91195fd
+
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer{
 	
