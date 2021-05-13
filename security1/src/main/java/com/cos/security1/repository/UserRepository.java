@@ -7,5 +7,8 @@ import com.cos.security1.model.User;
 // CRUD 함수
 // @Repository라는 어노테이션이 없어도 IOC가 됨 이유는 JpaRepository를 상속했기 때문에
 public interface UserRepository extends JpaRepository<User, Integer>{
-
+	// findBy규칙 -> Username문법
+	public User findByUsername(String username);
+	
+	public User findByUsernameAndEmail(String username, String email);
 }
