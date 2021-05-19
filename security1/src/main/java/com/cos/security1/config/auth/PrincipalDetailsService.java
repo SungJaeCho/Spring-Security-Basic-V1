@@ -18,6 +18,7 @@ public class PrincipalDetailsService implements UserDetailsService{
 	private final UserRepository userRepository;
 
 	// 시큐리티 session(Authentication(UserDetails))
+	// 함수 종료시 @AuthenticationPrincipal가 만들어진다
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		System.out.println("username :"+username);

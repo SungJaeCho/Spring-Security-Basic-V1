@@ -54,8 +54,10 @@ public class IndexController {
 		return "oauth2 세션정보확인하기";
 	}
 	
+	// 합친버전 로그인
 	@GetMapping("/user")
-	public @ResponseBody String user() {
+	public @ResponseBody String user(@AuthenticationPrincipal PrincipalDetails pinDetails) {
+		System.out.println("pinDetails :"+pinDetails.getUser());
 		return "user";
 	}
 	
